@@ -16,13 +16,19 @@ class CommonFunctions {
     return model;
   }
 
-  static Future<void> showFilePicker(BuildContext context) async {
+  static Future<PackModel> showFilePicker(BuildContext context) async {
     FilePickerResult? result = await FilePicker.platform
         .pickFiles(type: FileType.custom, allowedExtensions: ['json']);
+    PackModel model;
     if (result != null) {
       File file = File(result.files.single.path!);
-      print("entered");
+      model = await getModelFromFile(file);
+    } else {
+      File file = File(
+          "C:\\Users\\nasha\\StudioProjects\\local_postman\\lib\\database\\SPRINT 2 API UAT.postman_collection.json");
+      model = await getModelFromFile(file);
     }
+    return model;
   }
 
   static changeTheme() {

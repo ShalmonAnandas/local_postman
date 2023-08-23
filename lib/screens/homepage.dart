@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:local_postman/screens/show_pack_screen.dart';
 import 'package:local_postman/utils/CommonFunctions.dart';
 import 'package:local_postman/utils/Dataconstants.dart';
 import 'package:provider/provider.dart';
@@ -30,11 +31,7 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {
           CommonFunctions.showFilePicker(context).then(
             (value) {
-              myProvider.currentWidget = Container(
-                width: 600,
-                height: 600,
-                color: Colors.blue,
-              );
+              myProvider.currentWidget = const ShowPackScreen();
             },
           );
         },
