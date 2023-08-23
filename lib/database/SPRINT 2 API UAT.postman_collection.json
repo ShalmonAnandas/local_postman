@@ -1,0 +1,1752 @@
+{
+	"info": {
+		"_postman_id": "df124dd4-e136-4c35-866a-1a9762d8b020",
+		"name": "SPRINT 2 API UAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27844897",
+		"_collection_link": "https://warped-trinity-533426.postman.co/workspace/Intellect-Software-Problems~898898ba-f1ff-4c7f-98e2-212fdc44c4fa/collection/27844897-df124dd4-e136-4c35-866a-1a9762d8b020?action=share&source=collection_link&creator=27844897"
+	},
+	"item": [
+		{
+			"name": "Device authentication with biometric Working",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_id",
+							"value": "ASLMOB",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "APM185091",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "QXhpc0AxMjM=",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "device_id",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "user_type",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "login_type",
+							"value": "biometric",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/loginapi/deviceauthenticationnewapp",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"loginapi",
+						"deviceauthenticationnewapp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_id",
+							"value": "ASLMOB",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "APM185091",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "QW5raXRAMTIz",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "user_type",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "login_type",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dob_year",
+							"value": "1982",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dob_month",
+							"value": "02",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dob_date",
+							"value": "25",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "pan",
+							"value": "AHPPJ8307F",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "2FA",
+							"value": "N",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/loginapi/deviceregistrationnewapp",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"loginapi",
+						"deviceregistrationnewapp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Biometric API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_id",
+							"value": "ASLMOB",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "bhavya88",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/loginapi/getbiometric",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"loginapi",
+						"getbiometric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Biometric API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "requestType",
+							"value": "UPDATEBIOMETRIC",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "bhavya88",
+							"type": "text"
+						},
+						{
+							"key": "ent_id",
+							"value": "279009",
+							"type": "text"
+						},
+						{
+							"key": "biometric",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/loginapi/updatebiometric",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"loginapi",
+						"updatebiometric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forget_password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_name",
+							"value": "APM185091",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1990-11-19",
+							"type": "text"
+						},
+						{
+							"key": "pancard",
+							"value": "IQCDF4643M",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/AuthMobileApi/forgetPassword",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"AuthMobileApi",
+						"forgetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FORGET_PWD_OTP_VALIDATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "APM185091",
+							"type": "text"
+						},
+						{
+							"key": "otpCode",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/AuthMobileApi/Validateforgetpassword",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"AuthMobileApi",
+						"Validateforgetpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FORGET_USERNAME",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "zain.contractor@axissecurities.in",
+							"type": "text"
+						},
+						{
+							"key": "pan",
+							"value": "IQCDF4643M",
+							"type": "text"
+						},
+						{
+							"key": "app_id",
+							"value": "ASLMOB3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/AuthMobileApi/Forgetusername",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"AuthMobileApi",
+						"Forgetusername"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UNLOCK_ACC_UAT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "​{\"user_name\"",
+							"value": "\"APM185091\",",
+							"type": "text"
+						},
+						{
+							"key": "\"pan\"",
+							"value": "\"IQCDF4643M\",",
+							"type": "text"
+						},
+						{
+							"key": "\"date\"",
+							"value": "\"19\",",
+							"type": "text"
+						},
+						{
+							"key": "\"month\"",
+							"value": "\"11\",",
+							"type": "text"
+						},
+						{
+							"key": "\"year\"",
+							"value": "\"1990\",",
+							"type": "text"
+						},
+						{
+							"key": "\"app_id\"",
+							"value": "\"ASLMOB3\"}​",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/loginapi/deviceregistrationnewapp",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"loginapi",
+						"deviceregistrationnewapp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEND ACCESS CODE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "GFH88KLT42DQWX40",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "zain.contractor@axissecurities.in",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "RING",
+							"type": "default"
+						},
+						{
+							"key": "category",
+							"value": "RI",
+							"type": "default"
+						},
+						{
+							"key": "SMS_TEMPLATE",
+							"value": "13",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "ent_id",
+							"value": "185091",
+							"type": "default"
+						},
+						{
+							"key": "mobile_no",
+							"value": "9167541612",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/api/send",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"api",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RESEND  ACCESS CODE ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "GFH88KLT42DQWX40",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "MTM4Nw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/api/resend",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"api",
+						"resend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VALIDATE ACCESS CODE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "GFH88KLT42DQWX40",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "MTM4Nw==",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "333333",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/api/LoginValidateOtp",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"api",
+						"LoginValidateOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CURRENCY_ORDER_REQ_UAT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-5331</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>2377600</ORQ_USER_ID><ORQ_CHANNEL>C</ORQ_CHANNEL><ORQ_SEGMENT>F</ORQ_SEGMENT><ORQ_SECURITY_ID>1278</ORQ_SECURITY_ID><ORQ_CLIENT_ID>2596936</ORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>-1</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>0</ORQ_SERIAL_NO><ORQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY></ORQ_DISC_QTY><ORQ_NEW_REM_QTY>10</ORQ_NEW_REM_QTY><ORQ_PRICE>82</ORQ_PRICE><ORQ_MKT_PROT>-1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE>0</ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>M</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>20200781234690</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>IKXV543P9VIKIASDV14E</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN><ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>RAN_110.224.98.78</ORQ_CLIENT_IP></ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDER_MODIFICATION_CURR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-5332</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>2377600</ORQ_USER_ID><ORQ_CHANNEL>C</ORQ_CHANNEL><ORQ_SEGMENT>F</ORQ_SEGMENT><ORQ_SECURITY_ID>1278</ORQ_SECURITY_ID><ORQ_CLIENT_ID>2596936</ORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>20230704000024</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>2</ORQ_SERIAL_NO><ORQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY></ORQ_DISC_QTY><ORQ_NEW_REM_QTY>50</ORQ_NEW_REM_QTY><ORQ_PRICE>82.5</ORQ_PRICE><ORQ_MKT_PROT>-1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE>0</ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>M</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>20200781234690</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>K67UURDTLYR9NJY4NQ87</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN><ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>25july</ORQ_CLIENT_IP></ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDER_CANCELLATION_CURR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-\n5333</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>2377600</ORQ_USER_ID><ORQ_CHANNEL>C</ORQ\n_CHANNEL><ORQ_SEGMENT>F</ORQ_SEGMENT><ORQ_SECURITY_ID>1278</ORQ_SECURITY_ID><ORQ_CLIENT_ID>2596936</\nORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>20230703005077</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>2</ORQ_SERIAL_NO><O\nRQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY></ORQ_DISC_QTY><ORQ_NEW_\nREM_QTY>10</ORQ_NEW_REM_QTY><ORQ_PRICE>82</ORQ_PRICE><ORQ_MKT_PROT>-\n1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE>0</ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>M\n</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFAC\nE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>20200781234690</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>IKXV543P9VI\nKIASDV14E</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN>\n<ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>RAN_110.224.98.78<\n/ORQ_CLIENT_IP></ORDER_REQ>\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "COVER_ORDER_REQ_UAT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<COVER_ORDER_REQ>\n<ORQ_TRANSCODE>-5500</ORQ_TRANSCODE>\n<ORQ_EXCH>NSE</ORQ_EXCH>\n<ORQ_USER_ID>67189</ORQ_USER_ID>\n<ORQ_CHANNEL>I</ORQ_CHANNEL>\n<ORQ_SEGMENT>E</ORQ_SEGMENT>\n<ORQ_SECID_TYPE>8</ORQ_SECID_TYPE>\n<ORQ_SECURITY_ID>IDEAEQ</ORQ_SECURITY_ID>\n<ORQ_CLIENT_ID>165249</ORQ_CLIENT_ID><ORQ_BUY_SELL>B</ORQ_BUY_SELL>\n<ORQ_NEW_QTY>1</ORQ_NEW_QTY>\n<ORQ_LPRICE1>9</ORQ_LPRICE1>\n<ORQ_LPRICE2>8</ORQ_LPRICE2>\n<ORQ_TRGPRICE2>8.5</ORQ_TRGPRICE2><ORQ_VALIDITY1>3</ORQ_VALIDITY1>\n<ORQ_VALIDITY2>3</ORQ_VALIDITY2>\n<ORQ_PRODUCT>V</ORQ_PRODUCT>\n<ORQ_SESSION>N</ORQ_SESSION>\n<ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE>\n<ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE>\n<ORQ_MESG_SEQ>1234</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>FZAH9W001BZPBWL5484Q</ORQ_TOKEN_KEY>\n<ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD>\n<ORQ_PRE_OPEN>N</ORQ_PRE_OPEN><ORQ_CLIENT_IP>samidha</ORQ_CLIENT_IP></COVER_ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "COVER_ORDER_MODIFIED_UAT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-5103</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>67189</ORQ_USER_ID><ORQ_CHANNEL>I</ORQ_CHANNEL><ORQ_SEGMENT>E</ORQ_SEGMENT><ORQ_SECURITY_ID>IDEAEQ</ORQ_SECURITY_ID><ORQ_CLIENT_ID>165249</ORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>20230704000102</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>2</ORQ_SERIAL_NO><ORQ_BOOK_TYPE>SL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY>0</ORQ_DISC_QTY><ORQ_NEW_REM_QTY>1</ORQ_NEW_REM_QTY><ORQ_PRICE>9.1</ORQ_PRICE><ORQ_MKT_PROT>-1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE>8.5</ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>V</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>1234</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>FZAH9W001BZPBWL5484Q</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN><ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>samidha_1.2.3</ORQ_CLIENT_IP><ORQ_SECID_TYPE>IDEAEQ</ORQ_SECID_TYPE></ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KNOW_YOUR_MARGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<MARGIN_REQ>\n<ORQ_EXCH>NSE</ORQ_EXCH>\n<ORQ_SEGMENT>E</ORQ_SEGMENT>\n<ORQ_SECURITY_ID>TCSEQ</ORQ_SECURITY_ID>\n<ORQ_CLIENT_ID>165249</ORQ_CLIENT_ID><ORQ_BUY_SELL>B</ORQ_BUY_SELL>\n<ORQ_NEW_REM_QTY>1</ORQ_NEW_REM_QTY>\n<ORQ_PRICE>0</ORQ_PRICE>\n<ORQ_TRIGGER_PRICE></ORQ_TRIGGER_PRICE>\n<ORQ_PRODUCT>I</ORQ_PRODUCT>\n<ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE>\n<ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE>\n<ORQ_MESG_SEQ>1234</ORQ_MESG_SEQ>\n<ORQ_TOKEN_KEY>P9ZSEGQD5714CN63UCCS</ORQ_TOKEN_KEY>\n</MARGIN_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDER_REQ_EQ_UAT Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-5102</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>87109</ORQ_USER_ID><ORQ_CHANNEL>I</ORQ_CHANNEL><ORQ_SEGMENT>E</ORQ_SEGMENT><ORQ_SECURITY_ID>IDEAEQ</ORQ_SECURITY_ID><ORQ_CLIENT_ID>185091</ORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>-1</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>0</ORQ_SERIAL_NO><ORQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY>0</ORQ_DISC_QTY><ORQ_NEW_REM_QTY>35</ORQ_NEW_REM_QTY><ORQ_PRICE>7.2</ORQ_PRICE><ORQ_MKT_PROT>-1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE></ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>C</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>1234</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>K67UURDTLYR9NJY4NQ87</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN><ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>25july</ORQ_CLIENT_IP><ORQ_SECID_TYPE>IDEAEQ</ORQ_SECID_TYPE></ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDER_MODIFICATION_EQ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-5103</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>67189</ORQ_USER_ID><ORQ_CHANNEL>I</ORQ_CHANNEL><ORQ_SEGMENT>E</ORQ_SEGMENT><ORQ_SECURITY_ID>IDEAEQ</ORQ_SECURITY_ID><ORQ_CLIENT_ID>165249</ORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>20230609004642</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>2</ORQ_SERIAL_NO><ORQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY>0</ORQ_DISC_QTY><ORQ_NEW_REM_QTY>2</ORQ_NEW_REM_QTY><ORQ_PRICE>6.8</ORQ_PRICE><ORQ_MKT_PROT>-1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE></ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>C</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>1234</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>N0EZLO3U5NJRCGCVPX8Z</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN><ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>samidha_1.2.3</ORQ_CLIENT_IP><ORQ_SECID_TYPE>IDEAEQ</ORQ_SECID_TYPE></ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDER_MODIFICATION_DRV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ> \n<ORQ_TRANSCODE>-4403</ORQ_TRANSCODE> <ORQ_EXCH>NSE</ORQ_EXCH> \n<ORQ_USER_ID>87109</ORQ_USER_ID> \n<ORQ_CHANNEL>I</ORQ_CHANNEL> \n<ORQ_SEGMENT>D</ORQ_SEGMENT> \n<ORQ_SECURITY_ID>42697</ORQ_SECURITY_ID> \n<ORQ_CLIENT_ID>185091</ORQ_CLIENT_ID> \n<ORQ_BRK_ORDER_NO>20230703005069</ORQ_BRK_ORDER_NO> \n<ORQ_SERIAL_NO>2</ORQ_SERIAL_NO> \n<ORQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE> \n<ORQ_BUY_SELL>B</ORQ_BUY_SELL> \n<ORQ_DISC_QTY>0</ORQ_DISC_QTY> \n<ORQ_NEW_REM_QTY>300</ORQ_NEW_REM_QTY> \n<ORQ_PRICE>17794</ORQ_PRICE> \n<ORQ_MKT_PROT>-1</ORQ_MKT_PROT> \n<ORQ_TRIGGER_PRICE></ORQ_TRIGGER_PRICE> \n<ORQ_VALIDITY>3</ORQ_VALIDITY> \n<ORQ_PRODUCT>I</ORQ_PRODUCT> \n<ORQ_SESSION>N</ORQ_SESSION> \n<ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE> \n<ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE> \n<ORQ_MESG_SEQ>1234</ORQ_MESG_SEQ> \n<ORQ_TOKEN_KEY>6UF2O9Z84GRBYXPKL6CD</ORQ_TOKEN_KEY> \n<ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD> \n<ORQ_PRE_OPEN>N</ORQ_PRE_OPEN> \n<ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE> \n<ORQ_GTDT_DATE></ORQ_GTDT_DATE> <ORQ_CLIENT_IP>samidha_1.2.3</ORQ_CLIENT_IP> <ORQ_SECID_TYPE></ORQ_SECID_TYPE> \n</ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDER_CANCELLATION_EQ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-5104</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>87109</ORQ_USER_ID><ORQ_CHANNEL>I</ORQ_CHANNEL><ORQ_SEGMENT>E</ORQ_SEGMENT><ORQ_SECURITY_ID>ITCEQ</ORQ_SECURITY_ID><ORQ_CLIENT_ID>165249</ORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>20230630004969</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>3</ORQ_SERIAL_NO><ORQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY>0</ORQ_DISC_QTY><ORQ_NEW_REM_QTY>1</ORQ_NEW_REM_QTY><ORQ_PRICE>370</ORQ_PRICE><ORQ_MKT_PROT>-1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE></ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>C</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>1234</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>9R03NZW20N51SU0VEOML</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN><ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>samidha_1.2.3</ORQ_CLIENT_IP><ORQ_SECID_TYPE>IDEAEQ</ORQ_SECID_TYPE></ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDER_CANCELLATION_DERV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-\n4404</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>2377600</ORQ_USER_ID><ORQ_CHANNEL>I</ORQ_\nCHANNEL><ORQ_SEGMENT>D</ORQ_SEGMENT><ORQ_SECURITY_ID>42697</ORQ_SECURITY_ID><ORQ_CLIENT_ID>2596936</\nORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>20230703005078</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>2</ORQ_SERIAL_NO><O\nRQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY></ORQ_DISC_QTY><ORQ_NEW_\nREM_QTY>150</ORQ_NEW_REM_QTY><ORQ_PRICE>0</ORQ_PRICE><ORQ_MKT_PROT>-\n1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE>0</ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>M\n</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFAC\nE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>20200781234690</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>7Z5JJM1AIM\n0GYHSM7LYK</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN\n><ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>RAN_110.224.98.78\n</ORQ_CLIENT_IP></ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DERRIVATIVE UAT ORDER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDER_REQ><ORQ_TRANSCODE>-4402</ORQ_TRANSCODE><ORQ_EXCH>NSE</ORQ_EXCH><ORQ_USER_ID>87109</ORQ_USER_ID><ORQ_CHANNEL>I</ORQ_CHANNEL><ORQ_SEGMENT>D</ORQ_SEGMENT><ORQ_SECURITY_ID>43148</ORQ_SECURITY_ID><ORQ_CLIENT_ID>185091</ORQ_CLIENT_ID><ORQ_BRK_ORDER_NO>-1</ORQ_BRK_ORDER_NO><ORQ_SERIAL_NO>0</ORQ_SERIAL_NO><ORQ_BOOK_TYPE>RL</ORQ_BOOK_TYPE><ORQ_BUY_SELL>B</ORQ_BUY_SELL><ORQ_DISC_QTY></ORQ_DISC_QTY><ORQ_NEW_REM_QTY>50</ORQ_NEW_REM_QTY><ORQ_PRICE>0</ORQ_PRICE><ORQ_MKT_PROT>-1</ORQ_MKT_PROT><ORQ_TRIGGER_PRICE>0</ORQ_TRIGGER_PRICE><ORQ_VALIDITY>3</ORQ_VALIDITY><ORQ_PRODUCT>M</ORQ_PRODUCT><ORQ_SESSION>N</ORQ_SESSION><ORQ_SETTLEMENT_TYPE>0</ORQ_SETTLEMENT_TYPE><ORQ_INTERFACE_TYPE>E_A01</ORQ_INTERFACE_TYPE><ORQ_MESG_SEQ>20200781234690</ORQ_MESG_SEQ><ORQ_TOKEN_KEY>GEB0XKHNAJXUBLNWUKBV</ORQ_TOKEN_KEY><ORQ_TRADE_PASSWORD></ORQ_TRADE_PASSWORD><ORQ_PRE_OPEN>N</ORQ_PRE_OPEN><ORQ_EMARGIN_DATE></ORQ_EMARGIN_DATE><ORQ_GTDT_DATE></ORQ_GTDT_DATE><ORQ_CLIENT_IP>RAN_110.224.98.78</ORQ_CLIENT_IP></ORDER_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UAT_ORDERSTATUS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDERSTATUS_REQ>\n   <OSRQ_CLIENT>185091</OSRQ_CLIENT>\n   <OSRQ_SETT_TYPE>0</OSRQ_SETT_TYPE>\n   <OSRQ_SEGMENT>E</OSRQ_SEGMENT>\n   <OSRQ_EXCH>%</OSRQ_EXCH>\n   <OSRQ_INSTRUMENT>%</OSRQ_INSTRUMENT>\n   <OSRQ_SECID_SYMBOL>%</OSRQ_SECID_SYMBOL>\n   <OSRQ_EXP_DATE>%</OSRQ_EXP_DATE>\n   <OSRQ_OPTION_TYPE>XX</OSRQ_OPTION_TYPE>\n   <OSRQ_STRIKE_PRICE>-0.01</OSRQ_STRIKE_PRICE>\n   <OSRQ_BUY_SELL>%</OSRQ_BUY_SELL>\n   <OSRQ_STATUS>%</OSRQ_STATUS>\n   <OSRQ_SESSION>N</OSRQ_SESSION>\n   <OSRQ_ORSQ_RESTART_ORD_NO>0</OSRQ_ORSQ_RESTART_ORD_NO>\n   <OSRQ_INTERFACE_TYPE>E_A01</OSRQ_INTERFACE_TYPE>\n   <OSRQ_MESG_SEQ>1234</OSRQ_MESG_SEQ>\n   <OSRQ_TOKEN_KEY>O47459P66I3RTJ2L65A4</OSRQ_TOKEN_KEY>\n   <OSRQ_PRODUCT>%</OSRQ_PRODUCT>\n   <OSRQ_OB_TYPE></OSRQ_OB_TYPE>\n   <OSRQ_Remarks>%</OSRQ_Remarks>\n</ORDERSTATUS_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UAT_ORDERLOG",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<ORDERLOG_REQ>\n<OLRQ_CLIENT>165249</OLRQ_CLIENT>\n<OLRQ_SEGMENT>E</OLRQ_SEGMENT>\n<OLRQ_SESSION>N</OLRQ_SESSION>\n<OLRQ_ORDER_NO>20230704000009</OLRQ_ORDER_NO>\n<OLRQ_RESTART_SERIAL_NO>2</OLRQ_RESTART_SERIAL_NO>\n<OLRQ_INTERFACE_TYPE>E_A01</OLRQ_INTERFACE_TYPE>\n<OLRQ_MESG_SEQ>12345</OLRQ_MESG_SEQ>\n<OLRQ_TOKEN_KEY>4F1A4Y0NA4SO6S2PE9UH</OLRQ_TOKEN_KEY>\n</ORDERLOG_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UAT_TRADEBOOK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<TRADEBOOK_REQ>\n<TRQ_CLIENT>2596936</TRQ_CLIENT>\n<TRQ_SETT_TYPE>0</TRQ_SETT_TYPE>\n<TRQ_SEGMENT>F</TRQ_SEGMENT>\n<TRQ_EXCH>NSE</TRQ_EXCH>\n<TRQ_INSTRUMENT>FUTCUR</TRQ_INSTRUMENT>\n<TRQ_SECID_SYMBOL>1278</TRQ_SECID_SYMBOL>\n<TRQ_EXP_DATE>%</TRQ_EXP_DATE>\n<TRQ_OPTION_TYPE>%</TRQ_OPTION_TYPE>\n<TRQ_STRIKE_PRICE>-0.01</TRQ_STRIKE_PRICE>\n<TRQ_BUY_SELL>%</TRQ_BUY_SELL>\n<TRQ_RESTART_TRD_NO>0</TRQ_RESTART_TRD_NO>    <TRQ_RESTART_EXCH>0</TRQ_RESTART_EXCH><TRQ_RESTART_BUYSELL>0</TRQ_RESTART_BUYSELL><TRQ_RESTART_ORD_NO>20230704000006</TRQ_RESTART_ORD_NO><TRQ_INTERFACE_TYPE>E_A01</TRQ_INTERFACE_TYPE><TRQ_MESG_SEQ>1234</TRQ_MESG_SEQ><TRQ_TOKEN_KEY>9L32G7QE1R9M5ZJESGIR</TRQ_TOKEN_KEY>\n<TRQ_PRODUCT>%</TRQ_PRODUCT></TRADEBOOK_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UAT_netpos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<NETPOS_REQ>\n<NPRQ_CLIENT>2596936</NPRQ_CLIENT>\n<NPRQ_SETT_TYPE>0</NPRQ_SETT_TYPE><NPRQ_SEGMENT>F</NPRQ_SEGMENT>\n<NPRQ_EXCH>%</NPRQ_EXCH>\n<NPRQ_INSTRUMENT>%</NPRQ_INSTRUMENT>\n<NPRQ_DAY_CUMM>C</NPRQ_DAY_CUMM><NPRQ_SECID_SYMBOL>%</NPRQ_SECID_SYMBOL>\n<NPRQ_EXP_DATE>%</NPRQ_EXP_DATE>\n<NPRQ_OPTION_TYPE>%</NPRQ_OPTION_TYPE>\n<NPRQ_STRIKE_PRICE>-0.01</NPRQ_STRIKE_PRICE>\n<NPRQ_PRODUCT>%</NPRQ_PRODUCT>\n<NPRQ_RESTART_SECID_SYMBOL>0</NPRQ_RESTART_SECID_SYMBOL>\n<NPRQ_RESTART_INSTRUMENT>0</NPRQ_RESTART_INSTRUMENT>\n<NPRQ_RESTART_EXP_DATE>%</NPRQ_RESTART_EXP_DATE>\n<NPRQ_RESTART_OPTION_TYPE>0</NPRQ_RESTART_OPTION_TYPE>\n<NPRQ_RESTART_STRIKE_PRICE>0</NPRQ_RESTART_STRIKE_PRICE>\n<NRPQ_RESTART_EXCH>0</NRPQ_RESTART_EXCH>\n<NPRQ_RESTART_PRODUCT>0</NPRQ_RESTART_PRODUCT>\n<NPRQ_INTERFACE_TYPE>E_A01</NPRQ_INTERFACE_TYPE>\n<NPRQ_MESG_SEQ>1234</NPRQ_MESG_SEQ>\n<NPRQ_TOKEN_KEY>NCEPY2U8DIDCMF56U7GY</NPRQ_TOKEN_KEY>\n</NETPOS_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UAT_OPENPOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<OPENPOS_REQ>\n<OPRQ_CLIENT>185091</OPRQ_CLIENT>\n<OPRQ_SETT_TYPE>0</OPRQ_SETT_TYPE><OPRQ_SEGMENT>D</OPRQ_SEGMENT>\n<OPRQ_EXCH>%</OPRQ_EXCH>\n<OPRQ_INSTRUMENT>%</OPRQ_INSTRUMENT>\n<OPRQ_DAY_CUMM>D</OPRQ_DAY_CUMM>\n<OPRQ_SECID_SYMBOL>%</OPRQ_SECID_SYMBOL>\n<OPRQ_EXP_DATE>%</OPRQ_EXP_DATE>\n<OPRQ_OPTION_TYPE>XX</OPRQ_OPTION_TYPE>\n<OPRQ_STRIKE_PRICE>-0.01</OPRQ_STRIKE_PRICE>\n<OPRQ_PRODUCT>%</OPRQ_PRODUCT>\n<OPRQ_RESTART_INSTRUMENT>0</OPRQ_RESTART_INSTRUMENT>\n<OPRQ_RESTART_EXP_DATE>0</OPRQ_RESTART_EXP_DATE>\n<OPRQ_RESTART_OPTION_TYPE>0</OPRQ_RESTART_OPTION_TYPE>\n<OPRQ_RESTART_STRIKE_PRICE>-0.01</OPRQ_RESTART_STRIKE_PRICE>\n<OPRQ_RESTART_SECID_SYMBOL></OPRQ_RESTART_SECID_SYMBOL>\n<OPRQ_RESTART_EXCH>0</OPRQ_RESTART_EXCH>\n<OPRQ_RESTART_PRODUCT>0</OPRQ_RESTART_PRODUCT>\n<OPRQ_INTERFACE_TYPE>E_A01</OPRQ_INTERFACE_TYPE>\n<OPRQ_MESG_SEQ>1234</OPRQ_MESG_SEQ>\n<OPRQ_TOKEN_KEY>HFQKLC3OPY1KA4IY9YAD</OPRQ_TOKEN_KEY>\n</OPENPOS_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRODUCT_CONVERSION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/InterfaceAccess.do?requestType=ConvertToProduct&responseType=json&userId=87109&terminal=I&OrderNumber=20230421001059&entityId=185091&Interface_type=E_A01&prevPosFlag=&dealerId=185091&exch=NSE&buySell=B&tradeQty=1&tradePrice=7.20000&fromProductId=C&toProductId=E&settlementType=0&segment=E&exchTradeNo=20002064&tradeSerialNo=0&marketType=NL&grpSeriesInd=EQ&orderSerialNo=1&symbol=IDEAEQ&Mesg_seq=1234&TOKEN_KEY=O5AA7PEIUVG834Y3F5O2",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"InterfaceAccess.do"
+					],
+					"query": [
+						{
+							"key": "requestType",
+							"value": "ConvertToProduct"
+						},
+						{
+							"key": "responseType",
+							"value": "json"
+						},
+						{
+							"key": "userId",
+							"value": "87109"
+						},
+						{
+							"key": "terminal",
+							"value": "I"
+						},
+						{
+							"key": "OrderNumber",
+							"value": "20230421001059"
+						},
+						{
+							"key": "entityId",
+							"value": "185091"
+						},
+						{
+							"key": "Interface_type",
+							"value": "E_A01"
+						},
+						{
+							"key": "prevPosFlag",
+							"value": ""
+						},
+						{
+							"key": "dealerId",
+							"value": "185091"
+						},
+						{
+							"key": "exch",
+							"value": "NSE"
+						},
+						{
+							"key": "buySell",
+							"value": "B"
+						},
+						{
+							"key": "tradeQty",
+							"value": "1"
+						},
+						{
+							"key": "tradePrice",
+							"value": "7.20000"
+						},
+						{
+							"key": "fromProductId",
+							"value": "C"
+						},
+						{
+							"key": "toProductId",
+							"value": "E"
+						},
+						{
+							"key": "settlementType",
+							"value": "0"
+						},
+						{
+							"key": "segment",
+							"value": "E"
+						},
+						{
+							"key": "exchTradeNo",
+							"value": "20002064"
+						},
+						{
+							"key": "tradeSerialNo",
+							"value": "0"
+						},
+						{
+							"key": "marketType",
+							"value": "NL"
+						},
+						{
+							"key": "grpSeriesInd",
+							"value": "EQ"
+						},
+						{
+							"key": "orderSerialNo",
+							"value": "1"
+						},
+						{
+							"key": "symbol",
+							"value": "IDEAEQ"
+						},
+						{
+							"key": "Mesg_seq",
+							"value": "1234"
+						},
+						{
+							"key": "TOKEN_KEY",
+							"value": "O5AA7PEIUVG834Y3F5O2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEMAT HOLDINGS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<DB_Request><DBRQ_CLIENT_ID>185091</DBRQ_CLIENT_ID><DBRQ_CUST_ID>831538233</DBRQ_CUST_ID><DBRQ_DP_ID>IN304295</DBRQ_DP_ID><DBRQ_DP_ACCOUNT_NO>14562406</DBRQ_DP_ACCOUNT_NO><DBRQ_SOURCE>C</DBRQ_SOURCE><DBRQ_USER_ID>67189</DBRQ_USER_ID><DBRQ_PAGENO>1</DBRQ_PAGENO><DBRQ_INTERFACE>E_A01</DBRQ_INTERFACE><DBRQ_MESG_SEQ>1234</DBRQ_MESG_SEQ><DBRQ_TOKEN_KEY>FEREPO1AX9EZM0AFNOVY</DBRQ_TOKEN_KEY></DB_Request>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DP_HOLD_UAT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<Dp_Request>\n<DRQ_CLIENT_ID>165249</DRQ_CLIENT_ID>\n<DRQ_CLIENT_TYP>IC</DRQ_CLIENT_TYP>\n<DRQ_CUST_ID>033032620</DRQ_CUST_ID>\n<DRQ_DP_ID>IN304295</DRQ_DP_ID>\n<DRQ_DP_ACCOUNT_NO>14370717</DRQ_DP_ACCOUNT_NO>\n<DRQ_EXCHANGE>ALL</DRQ_EXCHANGE>\n<DRQ_SEGMENT>E</DRQ_SEGMENT>\n<DRQ_PRODUCT>C</DRQ_PRODUCT>\n<DRQ_TRANSCATION_TYPE>AH</DRQ_TRANSCATION_TYPE>\n<DRQ_SYMBOL>HAWAENGEQ</DRQ_SYMBOL>\n<DRQ_ISIN_CODE>INE230I01018</DRQ_ISIN_CODE>\n<DRQ_QTY>1</DRQ_QTY>\n<DRQ_SOURCE>I</DRQ_SOURCE>\n<DRQ_USER_ID>67189</DRQ_USER_ID>\n<DRQ_INTERFACE>E_A01</DRQ_INTERFACE>\n<DRQ_MESG_SEQ>1234</DRQ_MESG_SEQ>\n<DRQ_TOKEN_KEY>I6R931HGRZ0RJ1HY0UQV</DRQ_TOKEN_KEY>\n</Dp_Request>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PLEDGE SHARES/COLLATERAL_ACTION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/InterfaceAccess.do?requestType=CollateralAction&responseType=JSON&userId=2377600&loginId=apaala&entityId=2596936&symbol=IOCEQ&TOKEN_KEY=5TXG5B941KMA044TG06N&InterfaceType=E_A01",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"InterfaceAccess.do"
+					],
+					"query": [
+						{
+							"key": "requestType",
+							"value": "CollateralAction"
+						},
+						{
+							"key": "responseType",
+							"value": "JSON"
+						},
+						{
+							"key": "userId",
+							"value": "2377600"
+						},
+						{
+							"key": "loginId",
+							"value": "apaala"
+						},
+						{
+							"key": "entityId",
+							"value": "2596936"
+						},
+						{
+							"key": "symbol",
+							"value": "IOCEQ"
+						},
+						{
+							"key": "TOKEN_KEY",
+							"value": "5TXG5B941KMA044TG06N"
+						},
+						{
+							"key": "InterfaceType",
+							"value": "E_A01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UNSETTELED HOLDINGS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "xmlreqinput",
+							"value": "<SHAREPRJ_REQ>\n<SPRJRQ_CLIENTID>2596936</SPRJRQ_CLIENTID><SPRJRQ_EXCH>%</SPRJRQ_EXCH><SPRJRQ_SETLMNT_TYPE>0</SPRJRQ_SETLMNT_TYPE><SPRJRQ_INTERFACE>E_A01</SPRJRQ_INTERFACE><SPRJRQ_MESG_SEQ>1234</SPRJRQ_MESG_SEQ><SPRJRQ_TOKEN_KEY>5TXG5B941KMA044TG06N</SPRJRQ_TOKEN_KEY>\n</SHAREPRJ_REQ>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/input.XmlServlet?=",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"input.XmlServlet"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROFILE_DETAILS_UAT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ent_id",
+							"value": "165249",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "YXhpc2RpcmVjdA==",
+							"type": "text"
+						},
+						{
+							"key": "response_type",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "3919815",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/Profileapi/getProfileDetails?",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"Profileapi",
+						"getProfileDetails"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCSTOKENGEN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://tcsfoapiuatacess.go.akamai-access.com/600k/InterfaceAccess.do?requestType=getClientAuthTokenValue&responseType=JSON&entityId=185091&portalTokenId=952411&IPAddress=192.168.106.101&authType=E_A01",
+					"protocol": "https",
+					"host": [
+						"tcsfoapiuatacess",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"600k",
+						"InterfaceAccess.do"
+					],
+					"query": [
+						{
+							"key": "requestType",
+							"value": "getClientAuthTokenValue"
+						},
+						{
+							"key": "responseType",
+							"value": "JSON"
+						},
+						{
+							"key": "entityId",
+							"value": "185091"
+						},
+						{
+							"key": "portalTokenId",
+							"value": "952411"
+						},
+						{
+							"key": "IPAddress",
+							"value": "192.168.106.101"
+						},
+						{
+							"key": "authType",
+							"value": "E_A01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adportalapiuat2access.go.akamai-access.com/axisdirect_login/app/index.php/loginapi/deviceregistrationnewapp/GetProfilePic/ent_id/185091",
+					"protocol": "https",
+					"host": [
+						"adportalapiuat2access",
+						"go",
+						"akamai-access",
+						"com"
+					],
+					"path": [
+						"axisdirect_login",
+						"app",
+						"index.php",
+						"loginapi",
+						"deviceregistrationnewapp",
+						"GetProfilePic",
+						"ent_id",
+						"185091"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getprofile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.213.11:8090/app/index.php/site/GetProfilePic/ent_id/185091",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"213",
+						"11"
+					],
+					"port": "8090",
+					"path": [
+						"app",
+						"index.php",
+						"site",
+						"GetProfilePic",
+						"ent_id",
+						"185091"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://192.168.213.11:8090/app/index.php/site/GetProfilePic/ent_id/185091",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"213",
+						"11"
+					],
+					"port": "8090",
+					"path": [
+						"app",
+						"index.php",
+						"site",
+						"GetProfilePic",
+						"ent_id",
+						"185091"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
