@@ -16,7 +16,7 @@ class DataConstants {
   static var currentTheme =
       (platformBrightness == Brightness.light) ? lightTheme : darkTheme;
 
-  static bool darkthemeBool = false;
+  static bool isDarkTheme = false;
 
   static String appbarContent = "Local Postman";
 }
